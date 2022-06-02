@@ -2,15 +2,16 @@
   cursor: pointer;
   display: flex;
   position: relative;
+  bottom: 0px;
   flex-direction: column;
   padding: 3rem;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  border-radius: 8px;
+  border-radius: 12px;
   background: linear-gradient(-45deg, #212428, #212428);
   box-shadow: 10px 10px 20px #1b1e21, -10px -10px 20px #272a2f;
-  transition: background 0.3s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
 }
 .service-card::after {
   content: "";
@@ -27,4 +28,7 @@
 
 .service-card:hover::after {
   opacity: 1;
+}
+.service-card:hover {
+  bottom: 10px;
 }

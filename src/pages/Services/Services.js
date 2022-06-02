@@ -10,13 +10,35 @@ const Services = () => {
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-brands fa-react"></i>
+          <i class="fa-solid fa-layer-group"></i>
         </>
       ),
     },
     {
       id: 2,
-      title: "Mern Development",
+      title: "Frontend Development",
+      description:
+        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
+      icon: (
+        <>
+          <i class="fa-solid fa-code"></i>
+        </>
+      ),
+    },
+    {
+      id: 3,
+      title: "Backend Development",
+      description:
+        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
+      icon: (
+        <>
+          <i class="fa-solid fa-server"></i>
+        </>
+      ),
+    },
+    {
+      id: 4,
+      title: "React Development",
       description:
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
@@ -26,13 +48,13 @@ const Services = () => {
       ),
     },
     {
-      id: 3,
-      title: "Mern Development",
+      id: 5,
+      title: "Javascript Development",
       description:
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-js-square"></i>
         </>
       ),
     },
