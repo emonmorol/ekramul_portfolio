@@ -1,7 +1,4 @@
 .top-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   max-width: 80rem;
   margin: 8rem auto;
 }

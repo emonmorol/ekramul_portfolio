@@ -18,9 +18,9 @@ const Navbar = () => {
   return (
     <div className={`navigation ${navbar ? "active" : ""} z-50`}>
       <div class="navbar max-w-7xl mx-auto">
-        <div class="navbar-start w-full">
+        <div class="navbar-start w-full lg:w-1/4">
           <div class="dropdown dropdown-end w-full flex justify-between ">
-            <div class="avatar profile-image">
+            <div class="avatar">
               <div class="w-14 rounded-full">
                 <img
                   src="https://api.lorem.space/image/face?hash=33791"
@@ -64,9 +64,9 @@ const Navbar = () => {
           </div>
         </div>
         <div class="navbar-end hidden w-full lg:flex">
-          <ul class="menu py-2 justify-end w-full menu-horizontal p-0">
+          <ul class="menu w-full flex py-2 justify-end menu-horizontal p-0">
             <li>
-              <a>Item 1</a>
+              <a>my love</a>
             </li>
             <li>
               <a>Item 3</a>
