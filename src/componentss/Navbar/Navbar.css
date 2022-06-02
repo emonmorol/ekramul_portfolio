@@ -1,0 +1,22 @@
+.navigation {
+  background-color: #212428;
+  color: #c5d0de;
+  width: 100%;
+}
+
+.active {
+  background-color: #212428cb;
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0px;
+  transition: top 0.5s ease-in;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #d9e1eb;
+  text-transform: uppercase;
+}
