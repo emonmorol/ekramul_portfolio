@@ -11,8 +11,9 @@ const ProjectCard = ({ project }) => {
         </div>
         <div>
           <h2 className="font-semibold text-sm my-4 text-secondary">{title}</h2>
-          <h2 className="font-semibold text-xl my-4 text-accent hover:text-secondary">
+          <h2 className="project-title font-semibold text-xl my-4">
             {title}
+            <i class="title-icon text-secondary ml-2 fa-solid fa-arrow-turn-up"></i>
           </h2>
         </div>
         <div className="button-content flex justify-between mt-5">
