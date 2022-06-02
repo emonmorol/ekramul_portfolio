@@ -1,8 +1,35 @@
 import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import emon from "../../assets/images/emon_morol.png";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+
+  const links = (
+    <>
+      <li>
+        <Link smooth to="/landing#home">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link smooth to="/landing#services">
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link smooth to="/landing#portfolio">
+          Portfolio
+        </Link>
+      </li>
+      <li>
+        <Link smooth to="/landing#resume">
+          Resume
+        </Link>
+      </li>
+    </>
+  );
 
   const changeBg = () => {
     if (window.scrollY >= 200) {
@@ -22,10 +49,7 @@ const Navbar = () => {
           <div class="dropdown dropdown-end w-full flex justify-between ">
             <div class="avatar">
               <div class="w-14 rounded-full">
-                <img
-                  src="https://api.lorem.space/image/face?hash=33791"
-                  alt=""
-                />
+                <img src={emon} alt="" />
               </div>
               <h4>Ekramul</h4>
             </div>
@@ -36,59 +60,13 @@ const Navbar = () => {
               tabindex="0"
               class="menu py-2 navbar-end menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {links}
             </ul>
           </div>
         </div>
         <div class="navbar-end hidden w-full lg:flex">
           <ul class="menu w-full flex py-2 justify-end menu-horizontal p-0">
-            <li>
-              <a>my love</a>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            {links}
           </ul>
         </div>
       </div>
