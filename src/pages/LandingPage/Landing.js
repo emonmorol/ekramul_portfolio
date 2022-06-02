@@ -11,7 +11,9 @@ const Landing = () => {
       <Home />
       <SectionDivider margin={"-mt-32"} />
       <Services />
+      <SectionDivider margin={"mt-20"} />
       <Portfolio />
+      <SectionDivider margin={"mt-20"} />
       <Resume />
     </div>
   );

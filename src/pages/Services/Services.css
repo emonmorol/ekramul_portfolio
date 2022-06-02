@@ -1,0 +1,30 @@
+.service-card {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 8px;
+  background: linear-gradient(-45deg, #212428, #212428);
+  box-shadow: 10px 10px 20px #1b1e21, -10px -10px 20px #272a2f;
+  transition: background 0.3s ease-in-out;
+}
+.service-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(-45deg, #19191b, #23272b);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover::after {
+  opacity: 1;
+}

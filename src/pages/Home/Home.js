@@ -41,24 +41,36 @@ const Home = () => {
                 Find Me
               </h5>
               <div className="flex gap-5">
-                <div className="action-box">
-                  <a href="">
+                <a
+                  href="https://github.com/emonmorol"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="action-box">
                     {" "}
                     <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
-                <div className="action-box">
-                  <a href="">
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ekramul-hasan/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="action-box">
                     {" "}
                     <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div className="action-box">
-                  <a href="">
+                  </div>
+                </a>
+                <a
+                  href="https://www.facebook.com/ekramul.hasan.morol/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="action-box">
                     {" "}
                     <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
             <div>
