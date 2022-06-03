@@ -1,8 +1,18 @@
 import React from "react";
 import "./Contact.css";
 import contact from "../../assets/images/contact1.webp";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+
   return (
     <div id="contact" className="max-w-7xl mx-auto">
       <p className="text-base text-secondary uppercase">Contact</p>
@@ -69,32 +79,51 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-card p-10 w-3/5">
-          <form className="">
+          <form onSubmit={handleSubmit(onSubmit)} className="">
             <div className="mb-8 flex gap-10">
               <div class="form-control w-full">
-                <label class="label">Alt label</label>
-                <input type="text" class="input input-bordered w-full" />
+                <label class="label">Full Name</label>
+                <input
+                  {...register("name", { required: true })}
+                  type="text"
+                  class="input input-bordered w-full"
+                />
               </div>
 
               <div class="form-control w-full">
-                <label class="label">Alt label</label>
-                <input type="text" class="input input-bordered w-full" />
+                <label class="label">Contact Number</label>
+                <input
+                  {...register("phone", { required: true })}
+                  type="number"
+                  class="input input-bordered w-full"
+                />
               </div>
             </div>
 
             <div class="mb-8 form-control w-full">
-              <label class="label">Alt label</label>
-              <input type="text" class="input input-bordered w-full" />
+              <label class="label">Email</label>
+              <input
+                {...register("email", { required: true })}
+                type="text"
+                class="input input-bordered w-full"
+              />
             </div>
 
             <div class="mb-8 form-control w-full">
-              <label class="label">Alt label</label>
-              <input type="text" class="input input-bordered w-full" />
+              <label class="label">Subject</label>
+              <input
+                {...register("subject", { required: true })}
+                type="text"
+                class="input input-bordered w-full"
+              />
             </div>
 
             <div class="mb-8 form-control">
-              <label class="label">Alt label</label>
-              <textarea class="textarea textarea-bordered h-36"></textarea>
+              <label class="label">Your Message</label>
+              <textarea
+                {...register("message", { required: true })}
+                class="textarea textarea-bordered h-36"
+              ></textarea>
             </div>
 
             <button className="send-mail-button w-full" type="submit">

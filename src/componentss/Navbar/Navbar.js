@@ -42,7 +42,6 @@ const Navbar = () => {
     } else {
       setNavbar(false);
     }
-    console.log(window.scrollY, navbar);
   };
 
   window.addEventListener("scroll", changeBg);
