@@ -30,6 +30,11 @@ const Home = () => {
               </span>
             </p>
             <p className="text-left text-base text-accent w-full lg:w-[60ch]">
+              Hi I am a Mern Stack developer And I can build your website as you
+              want. I can build website Single Page Web Application. Now I am
+              able to design your portfolio.
+              <br />
+              <br />
               Creative problem solver with demonstrated ability to work on
               multiple projects simultaneously.Positive driven and confident
               individual with an apt for learning new technology.{" "}
