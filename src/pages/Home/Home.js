@@ -19,7 +19,7 @@ const Home = () => {
               <span>
                 <Typed
                   strings={[
-                    "A MERN Developer",
+                    "A Mern Developer",
                     "A Frontend Developer",
                     "A Backend Developer",
                     "A React.JS Developer",

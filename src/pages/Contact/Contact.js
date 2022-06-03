@@ -5,6 +5,8 @@ import contact from "../../assets/images/contact1.webp";
 const Contact = () => {
   return (
     <div id="contact" className="max-w-7xl mx-auto">
+      <p className="text-base text-secondary uppercase">Contact</p>
+      <p className="text-accent font-bold text-6xl mb-10">Contact With Me</p>
       <div className="w-full flex justify-center gap-10">
         <div className="contact-card p-10 w-2/5 h-full text-left">
           <div className="contact-image rounded-2xl overflow-hidden mb-10">
@@ -14,7 +16,7 @@ const Contact = () => {
             Ekramul Hasan
           </h3>
           <p className="text-gray-500 text-lg">
-            Chief Operating Officer
+            Mern Stack Developer
             <br />
             <br />
             I am available for freelance work. Connect with me via call or email
@@ -67,28 +69,38 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-card p-10 w-3/5">
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
-          <h2>skjdfhskjfdkjdshfkjdshfksjhfs</h2>
+          <form className="">
+            <div className="mb-8 flex gap-10">
+              <div class="form-control w-full">
+                <label class="label">Alt label</label>
+                <input type="text" class="input input-bordered w-full" />
+              </div>
+
+              <div class="form-control w-full">
+                <label class="label">Alt label</label>
+                <input type="text" class="input input-bordered w-full" />
+              </div>
+            </div>
+
+            <div class="mb-8 form-control w-full">
+              <label class="label">Alt label</label>
+              <input type="text" class="input input-bordered w-full" />
+            </div>
+
+            <div class="mb-8 form-control w-full">
+              <label class="label">Alt label</label>
+              <input type="text" class="input input-bordered w-full" />
+            </div>
+
+            <div class="mb-8 form-control">
+              <label class="label">Alt label</label>
+              <textarea class="textarea textarea-bordered h-36"></textarea>
+            </div>
+
+            <button className="send-mail-button w-full" type="submit">
+              <span> Send Mail</span> <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
