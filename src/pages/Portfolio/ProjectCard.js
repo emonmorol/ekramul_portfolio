@@ -4,7 +4,11 @@ import "./Portfolio.css";
 const ProjectCard = ({ project }) => {
   const { title, image } = project;
   return (
-    <div className="portfolio-card text-accent hover:text-white">
+    <div
+      data-aos="zoom-in-right"
+      data-aos-duration="1500"
+      className="portfolio-card text-accent hover:text-white"
+    >
       <div className="text-left">
         <div className="image-content rounded-xl overflow-hidden">
           <img src={image} alt="" />

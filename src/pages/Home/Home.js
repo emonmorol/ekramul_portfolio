@@ -10,10 +10,19 @@ const Home = () => {
       <div className="top-content flex flex-col-reverse lg:flex-row justify-between items-center">
         <div className="w-full lg:w-2/3">
           <div>
-            <p className=" text-left text-base text-accent">
-              wellcome to my world
+            <p
+              data-aos="fade-down-right"
+              data-aos-duration="500"
+              className=" text-left text-base text-accent"
+            >
+              Welcome To My World
             </p>
-            <p className="font-semibold my-7 text-left text-4xl lg:text-6xl text-white leading-snug">
+            <p
+              data-aos="fade-down-right"
+              data-aos-duration="600"
+              data-aos-delay="400"
+              className="font-semibold my-7 text-left text-4xl lg:text-6xl text-white leading-snug"
+            >
               Hi, I'm <span className="text-secondary">Ekramul Hasan</span>
               <br />
               <span>
@@ -30,7 +39,12 @@ const Home = () => {
                 />
               </span>
             </p>
-            <p className="text-left text-base text-accent w-full lg:w-[60ch]">
+            <p
+              data-aos="fade-down-right"
+              data-aos-duration="600"
+              data-aos-delay="900"
+              className="text-left text-base text-accent w-full lg:w-[60ch]"
+            >
               Hi I am a Mern Stack developer And I can build your website as you
               want. I can build website Single Page Web Application. Now I am
               able to design your portfolio.
@@ -43,6 +57,9 @@ const Home = () => {
           </div>
           <div className="flex gap-5 my-10 -mb-20">
             <a
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="1000"
               className="anchor-button"
               href="https://drive.google.com/file/d/1YL9Vqn8aBaS0F8xo-eWu4DIQq9Z6DwkX/view"
               target="_blank"
@@ -51,17 +68,32 @@ const Home = () => {
               My Resume
             </a>
 
-            <Link smooth className="anchor-button" to="/landing#contact">
+            <Link
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="1000"
+              smooth
+              className="anchor-button"
+              to="/landing#contact"
+            >
               Hire me
             </Link>
           </div>
           <div className="text-accent flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between pr-0 lg:pr-36 mt-32">
             <div>
-              <h5 className="text-left mb-3 uppercase tracking-wide">
+              <h5
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-delay="1000"
+                className="text-left mb-3 uppercase tracking-wide"
+              >
                 Find Me
               </h5>
               <div className="flex gap-5">
                 <a
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="1000"
                   href="https://github.com/emonmorol"
                   target="_blank"
                   rel="noreferrer"
@@ -72,6 +104,9 @@ const Home = () => {
                   </div>
                 </a>
                 <a
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="1000"
                   href="https://www.linkedin.com/in/ekramul-hasan/"
                   target="_blank"
                   rel="noreferrer"
@@ -82,6 +117,9 @@ const Home = () => {
                   </div>
                 </a>
                 <a
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="1000"
                   href="https://www.facebook.com/ekramul.hasan.morol/"
                   target="_blank"
                   rel="noreferrer"
@@ -94,24 +132,48 @@ const Home = () => {
               </div>
             </div>
             <div>
-              <h5 className="text-left mb-3 uppercase tracking-wide">
+              <h5
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-delay="1000"
+                className="text-left mb-3 uppercase tracking-wide"
+              >
                 Best skills
               </h5>
               <div className="flex gap-5">
-                <div className="action-box text-blue-500">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="1000"
+                  className="action-box text-blue-500"
+                >
                   <i class="fa-brands fa-react"></i>
                 </div>
-                <div className="action-box text-yellow-500">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="1000"
+                  className="action-box text-yellow-500"
+                >
                   <i class="fa-brands fa-js-square"></i>
                 </div>
-                <div className="action-box text-blue-500">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="1000"
+                  className="action-box text-blue-500"
+                >
                   <i class="fa-brands fa-css3-alt"></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="image w-[22rem] lg:w-[32rem] h-[25rem] lg:h-[35rem] flex justify-end bg-white relative mb-20 lg:mt-0">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          className="image w-[22rem] lg:w-[32rem] h-[25rem] lg:h-[35rem] flex justify-end bg-white relative mb-20 lg:mt-0"
+        >
           <img className="absolute bottom-0" src={ekramul} alt="" />
         </div>
       </div>
