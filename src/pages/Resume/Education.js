@@ -1,48 +1,29 @@
 import React from "react";
-import ServiceCard from "../Services/ServiceCard";
+import EducationCard from "./EducationCard";
 
 const Education = () => {
+  const educations = [
+    {
+      id: 1,
+      degree: "BSc. in Computer Science And Engineering",
+      institute: "Hajee Mogammad Danesh Science And Technology University",
+      year: "2022 (First Semester) - 2026 (Possibly)",
+    },
+    {
+      id: 2,
+      degree: "Science",
+      institute: "Notre Dame Collage",
+      year: "2018 - 2020",
+    },
+  ];
   return (
     <div>
       <div class="relative max-w-2xl mx-auto mt-16">
         <div class="absolute top-0 h-full border-r-2 border-black left-3"></div>
         <ul class="space-y-2">
-          <li>
-            <div class="timeline-card flex items-center mb-10">
-              {/* <span class="w-3 h-3 mr-8 translate-x-1/2 bg-gray-500 rounded-full"></span> */}
-              <div className="service-card ml-10">
-                skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk
-                skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk
-                skjfhaksdjfhk skjfhaksdjfhk <br />
-                ksdlfkjdslfkj <br />
-                kjsdfksjhfdkj
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-card flex items-center mb-10">
-              {/* <span class="w-3 h-3 mr-8 translate-x-1/2 bg-gray-500 rounded-full"></span> */}
-              <div className="service-card ml-10">
-                skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk
-                skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk
-                skjfhaksdjfhk skjfhaksdjfhk <br />
-                ksdlfkjdslfkj <br />
-                kjsdfksjhfdkj
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-card flex items-center mb-10">
-              {/* <span class="w-3 h-3 mr-8 translate-x-1/2 bg-gray-500 rounded-full"></span> */}
-              <div className="service-card ml-10">
-                skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk
-                skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk skjfhaksdjfhk
-                skjfhaksdjfhk skjfhaksdjfhk <br />
-                ksdlfkjdslfkj <br />
-                kjsdfksjhfdkj
-              </div>
-            </div>
-          </li>
+          {educations.map((education) => (
+            <EducationCard key={education.id} education={education} />
+          ))}
         </ul>
       </div>
     </div>

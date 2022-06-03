@@ -48,7 +48,7 @@ const Navbar = () => {
         <div class="navbar-start w-full lg:w-1/4">
           <div class="dropdown dropdown-end w-full flex justify-between ">
             <div class="avatar">
-              <div class="w-14 rounded-full">
+              <div class="w-12 rounded-full">
                 <img src={emon} alt="" />
               </div>
               <h4>Ekramul</h4>

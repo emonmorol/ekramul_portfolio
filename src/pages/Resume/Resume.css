@@ -90,7 +90,7 @@
   content: " ";
   background: #212428;
   z-index: 2;
-  width: 17px;
+  width: 8px;
   height: 8px;
   border-radius: 5px;
   box-shadow: 0px 0px 0px 4px black;
@@ -106,4 +106,39 @@
   background: black;
   width: 88px;
   height: 3px;
+}
+
+.education-card {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  bottom: 0px;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 12px;
+  background: linear-gradient(-45deg, #212428, #212428);
+  box-shadow: 10px 10px 20px #1b1e21, -10px -10px 20px #272a2f;
+  transition: bottom 0.3s ease-in-out;
+}
+.education-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(-45deg, #19191b, #23272b);
+  border-radius: 12px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.education-card:hover::after {
+  opacity: 1;
 }
