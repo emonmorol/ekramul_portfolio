@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./componentss/Navbar/Navbar";
+import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Landing from "./pages/LandingPage/Landing";
 import Portfolio from "./pages/Portfolio/Portfolio";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/landing#portfolio" element={<Portfolio />} />
         <Route path="/landing#resume" element={<Resume />} />
         <Route path="/landing#services" element={<Services />} />
+        <Route path="/landing#contact" element={<Contact />} />
       </Routes>
     </div>
   );

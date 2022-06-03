@@ -28,6 +28,11 @@ const Navbar = () => {
           Resume
         </Link>
       </li>
+      <li>
+        <Link smooth to="/landing#contact">
+          Contact me
+        </Link>
+      </li>
     </>
   );
 

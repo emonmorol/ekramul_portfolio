@@ -3,15 +3,16 @@ import emon from "../../assets/images/emon_morol.png";
 
 const Footer = () => {
   return (
-    <div className="footer-content">
+    <div className="footer-content pb-10 -mt-10">
       <footer class="footer justify-center items-center gap-24 p-10 text-neutral-content max-w-7xl mx-auto">
-        <div>
+        <div className="flex flex-col items-center">
           <div class="avatar">
             <div class="w-12 rounded-full">
               <img className=" bg-white" src={emon} alt="" />
             </div>
+            <h2>Ekramul</h2>
           </div>
-          <p>All Rights Reserved @ Ekramul Hasan</p>
+          <p className="text-gray-600">All Rights Reserved @ Ekramul Hasan</p>
         </div>
         <div>
           <span class="footer-title">Social</span>

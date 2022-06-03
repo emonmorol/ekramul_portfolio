@@ -2,6 +2,7 @@ import React from "react";
 import ekramul from "../../assets/images/ekramul.png";
 import "./Home.css";
 import Typed from "react-typed";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -39,6 +40,20 @@ const Home = () => {
               multiple projects simultaneously.Positive driven and confident
               individual with an apt for learning new technology.{" "}
             </p>
+          </div>
+          <div className="flex gap-5 my-10 -mb-20">
+            <a
+              className="anchor-button"
+              href="https://drive.google.com/file/d/1YL9Vqn8aBaS0F8xo-eWu4DIQq9Z6DwkX/view"
+              target="_blank"
+              rel="noreferrer"
+            >
+              My Resume
+            </a>
+
+            <Link smooth className="anchor-button" to="/landing#contact">
+              Hire me
+            </Link>
           </div>
           <div className="text-accent flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between pr-0 lg:pr-36 mt-32">
             <div>
