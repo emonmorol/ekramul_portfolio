@@ -27,10 +27,16 @@ const Resume = () => {
 
   return (
     <div id="resume" className="text-white max-w-7xl mx-auto">
-      <p className="text-base text-secondary uppercase">Ekramul hasan</p>
-      <p className="text-accent font-bold text-6xl mb-10">Resume </p>
+      <div data-aos="zoom-in" data-aos-duration="500">
+        <p className="text-base text-secondary uppercase">Ekramul hasan</p>
+        <p className="text-accent font-bold text-6xl mb-10">Resume </p>
+      </div>
       <div className="min-h-[50vh]">
-        <div class="tab-button-content w-full">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          class="tab-button-content w-full"
+        >
           <label
             onClick={handleSkill}
             class={`tab-button ${skill && "active-tab"} w-1/3`}

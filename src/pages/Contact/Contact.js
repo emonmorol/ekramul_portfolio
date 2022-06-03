@@ -15,10 +15,16 @@ const Contact = () => {
 
   return (
     <div id="contact" className="max-w-7xl mx-auto">
-      <p className="text-base text-secondary uppercase">Contact</p>
-      <p className="text-accent font-bold text-6xl mb-10">Contact With Me</p>
+      <div data-aos="zoom-in" data-aos-duration="500">
+        <p className="text-base text-secondary uppercase">Contact</p>
+        <p className="text-accent font-bold text-6xl mb-10">Contact With Me</p>
+      </div>
       <div className="w-full flex justify-center gap-10">
-        <div className="contact-card p-10 w-2/5 h-full text-left">
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="1500"
+          className="contact-card p-10 w-2/5 h-full text-left"
+        >
           <div className="contact-image rounded-2xl overflow-hidden mb-10">
             <img src={contact} alt="" />
           </div>
@@ -78,7 +84,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="contact-card p-10 w-3/5">
+        <div
+          data-aos="fade-up-left"
+          data-aos-duration="1500"
+          className="contact-card p-10 w-3/5"
+        >
           <form onSubmit={handleSubmit(onSubmit)} className="">
             <div className="mb-8 flex gap-10">
               <div class="form-control w-full">

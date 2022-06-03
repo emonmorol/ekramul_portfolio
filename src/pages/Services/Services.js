@@ -62,8 +62,10 @@ const Services = () => {
 
   return (
     <div id="services" className="text-white max-w-7xl mx-auto">
-      <p className="text-base text-secondary uppercase">Services</p>
-      <p className="text-accent font-bold text-6xl mb-10">What I Do </p>
+      <div data-aos="zoom-in" data-aos-duration="500">
+        <p className="text-base text-secondary uppercase">Services</p>
+        <p className="text-accent font-bold text-6xl mb-10">What I Do </p>
+      </div>
       <div className="grid grid-cols-3 gap-10">
         {serviceIProvide.map((service) => (
           <ServiceCard key={service.id} service={service} />

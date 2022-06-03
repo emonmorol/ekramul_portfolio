@@ -85,10 +85,12 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="text-white max-w-7xl mx-auto">
-      <p className="text-base text-secondary uppercase">
-        VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
-      </p>
-      <p className="text-accent font-bold text-6xl mb-10">Portfolio</p>
+      <div data-aos="zoom-in" data-aos-duration="500">
+        <p className="text-base text-secondary uppercase">
+          VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
+        </p>
+        <p className="text-accent font-bold text-6xl mb-10">Portfolio</p>
+      </div>
       <div className="grid grid-cols-3 gap-10">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

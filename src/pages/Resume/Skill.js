@@ -561,7 +561,11 @@ const Skill = () => {
   return (
     <div id="skill" className="mt-16 text-accent">
       <div className="grid grid-cols-2 gap-10">
-        <div className="skill-container">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          className="skill-container"
+        >
           <h2>Expertise</h2>
           <div className="flex flex-wrap justify-center gap-5 pb-5">
             {expertise.map((skill) => (
@@ -569,7 +573,11 @@ const Skill = () => {
             ))}
           </div>
         </div>
-        <div className="skill-container">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          className="skill-container"
+        >
           <h2>Comfortable</h2>
           <div className="flex flex-wrap justify-center gap-5 pb-5">
             {comfortable.map((skill) => (
@@ -577,7 +585,11 @@ const Skill = () => {
             ))}
           </div>
         </div>
-        <div className="skill-container">
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="1500"
+          className="skill-container"
+        >
           <h2>Familiar</h2>
           <div className="flex flex-wrap justify-center gap-5 pb-5">
             {familiar.map((skill) => (
@@ -585,7 +597,11 @@ const Skill = () => {
             ))}
           </div>
         </div>
-        <div className="skill-container">
+        <div
+          data-aos="fade-up-left"
+          data-aos-duration="1500"
+          className="skill-container"
+        >
           <h2>Tools</h2>
           <div className="flex flex-wrap justify-center gap-5 pb-5">
             {tools.map((skill) => (
