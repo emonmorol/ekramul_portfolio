@@ -5,7 +5,7 @@
 .image {
   border-radius: 15px;
   background: #212428;
-  box-shadow: 13px 13px 26px #171a1c, -13px -13px 26px #2b2e34;
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
 }
 
 .action-box {
@@ -20,7 +20,7 @@
   align-items: center;
   border-radius: 8px;
   background: linear-gradient(-45deg, #212428, #212428);
-  box-shadow: 10px 10px 20px #1b1e21, -10px -10px 20px #272a2f;
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
   transition: all 0.3s ease-in-out;
 }
 .action-box:hover {
@@ -41,7 +41,7 @@
   letter-spacing: 2px;
   border-radius: 5px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 7px 7px 14px #1c1f22, -7px -7px 14px #26292e;
+  box-shadow: 20px 20px 40px #0d0e10, -20px -20px 40px #353a40;
   transition: all 0.3s ease-in-out;
 }
 

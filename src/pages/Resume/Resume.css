@@ -3,7 +3,7 @@
   justify-content: center;
   border-radius: 5px;
   background: #212428;
-  box-shadow: 13px 13px 26px #171a1c, -13px -13px 26px #2b2e34;
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
 }
 .tab-button-content ui {
   margin: auto;
@@ -63,7 +63,7 @@
 
 .skill-container {
   background: linear-gradient(-45deg, #21242800, #21242800);
-  box-shadow: 13px 13px 26px #171a1c, -13px -13px 26px #2b2e34;
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
   padding: 30px;
   border-radius: 14px;
 }
@@ -122,7 +122,7 @@
   z-index: 1;
   border-radius: 12px;
   background: linear-gradient(-45deg, #212428, #212428);
-  box-shadow: 10px 10px 20px #1b1e21, -10px -10px 20px #272a2f;
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
   transition: bottom 0.3s ease-in-out;
 }
 .education-card::after {

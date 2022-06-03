@@ -9,7 +9,7 @@
   z-index: 1;
   border-radius: 20px;
   background: linear-gradient(-45deg, #212428, #212428);
-  box-shadow: 10px 10px 20px #1b1e21, -10px -10px 20px #272a2f;
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
 }
 .portfolio-card::after {
   content: "";

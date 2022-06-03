@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   color: white;
-  border-radius: 5px;
+  border-radius: 20px;
   background: linear-gradient(-45deg, #21242800, #21242800);
   box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
   transition: color 0.3s ease;
@@ -24,4 +24,13 @@
 
 .contact-card:hover::after {
   opacity: 1;
+}
+
+.contact-image img {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-image img {
+  transform: scale(1.2);
 }
