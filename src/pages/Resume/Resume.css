@@ -15,7 +15,7 @@
   z-index: 1;
   text-transform: uppercase;
   color: white;
-  padding: 20px 60px;
+  padding: 30px 60px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -59,4 +59,24 @@
   bottom: 0px;
   background: linear-gradient(-45deg, #19191b, #23272b);
   border-radius: 5px;
+}
+
+.skill-container {
+  background: linear-gradient(-45deg, #21242800, #21242800);
+  box-shadow: 13px 13px 26px #171a1c, -13px -13px 26px #2b2e34;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.skill-container h2 {
+  color: #ff014f;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.skill-container p {
+  padding: 1rem 2rem;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 23px #1b1e21, -10px -10px 23px #272a2f;
 }
