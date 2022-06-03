@@ -42,7 +42,7 @@
   object-fit: cover;
   object-position: top;
   height: 270px;
-  transition: 8s all ease;
+  transition: 5s all ease;
 }
 .portfolio-card:hover .image-content img {
   object-position: bottom;

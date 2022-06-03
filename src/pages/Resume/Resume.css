@@ -81,3 +81,29 @@
   background: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 23px #1b1e21, -10px -10px 23px #272a2f;
 }
+
+.timeline-card {
+  position: relative;
+}
+
+.timeline-card::before {
+  content: " ";
+  background: #212428;
+  z-index: 2;
+  width: 17px;
+  height: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 4px black;
+  transform: translateX(100%);
+}
+.timeline-card:hover::before {
+  background: #ff014f;
+}
+.timeline-card::after {
+  content: " ";
+  position: absolute;
+  left: 2%;
+  background: black;
+  width: 88px;
+  height: 3px;
+}
