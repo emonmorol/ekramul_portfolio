@@ -76,6 +76,7 @@
 }
 
 .skill-container p {
+  color: #c4cfde;
   padding: 1rem 2rem;
   background: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 23px #1b1e21, -10px -10px 23px #272a2f;

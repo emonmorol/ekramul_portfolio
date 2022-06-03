@@ -28,7 +28,7 @@
 .portfolio-card:hover::after {
   opacity: 1;
 }
-:hover {
+.portfolio-card:hover {
   color: #ff014f;
 }
 
