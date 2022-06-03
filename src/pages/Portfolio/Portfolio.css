@@ -28,16 +28,33 @@
 .portfolio-card:hover::after {
   opacity: 1;
 }
-.portfolio-card:hover {
+:hover {
   color: #ff014f;
 }
-.portfolio-card img {
+
+.image-content {
+  width: 100%;
+  margin: auto;
+  cursor: n-resize;
+}
+.image-content img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 270px;
+  transition: 8s all ease;
+}
+.portfolio-card:hover .image-content img {
+  object-position: bottom;
+}
+
+/* .portfolio-card img {
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
 }
 .portfolio-card:hover img {
   transform: scale(1.1);
-}
+} */
 
 .project-title {
   color: white;

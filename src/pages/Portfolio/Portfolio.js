@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import forge from "../../assets/images/forge-the-drill.web.app.png";
 
 const Portfolio = () => {
   const projects = [
@@ -13,8 +14,7 @@ const Portfolio = () => {
           <i class="fa-solid fa-layer-group"></i>
         </>
       ),
-      image:
-        "https://www.flexgigzz.com/wp-content/uploads/2021/04/bexer-bootstrap-business-template.jpg",
+      image: forge,
     },
     {
       id: 2,

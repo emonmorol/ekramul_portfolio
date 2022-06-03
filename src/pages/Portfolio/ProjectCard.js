@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="portfolio-card text-accent hover:text-white">
       <div className="text-left">
-        <div className="rounded-xl overflow-hidden">
+        <div className="image-content rounded-xl overflow-hidden">
           <img src={image} alt="" />
         </div>
         <div>
