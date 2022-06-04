@@ -2,7 +2,12 @@ import React from "react";
 import "./Portfolio.css";
 
 const ProjectCard = ({ project }) => {
-  const { title, image } = project;
+  const {
+    title,
+    image,
+    name,
+    links: { live, server, client },
+  } = project;
   return (
     <div
       data-aos="zoom-in-right"
@@ -15,25 +20,40 @@ const ProjectCard = ({ project }) => {
         </div>
         <div>
           <h2 className="font-semibold text-sm my-4 text-secondary">{title}</h2>
-          <h2 className="project-title font-semibold text-xl my-4">
-            {title}
+          <h2 className="project-title text-accent font-semibold text-xl my-4">
+            {name}
             <i className="title-icon text-secondary ml-2 fa-solid fa-arrow-turn-up"></i>
           </h2>
         </div>
         <div className="button-content flex justify-between mt-5">
-          <button className="project-button text-[10px] lg:text-[12px]">
+          <a
+            href={live}
+            target="_blank"
+            rel="noreferrer"
+            className="project-button text-[10px] lg:text-[12px]"
+          >
             <i className="text-sm text-secondary mr-2 fa-solid fa-circle-dot"></i>
             View Live
-          </button>
-          <button className="project-button text-[10px] lg:text-[12px]">
+          </a>
+          <a
+            href={client}
+            target="_blank"
+            rel="noreferrer"
+            className="project-button text-[10px] lg:text-[12px]"
+          >
             <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
             Client Code
-          </button>
-          <button className="project-button text-[10px] lg:text-[12px]">
+          </a>
+          <a
+            href={server}
+            target="_blank"
+            rel="noreferrer"
+            className="project-button text-[10px] lg:text-[12px]"
+          >
             {" "}
             <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
             Server Code
-          </button>
+          </a>
         </div>
       </div>
     </div>

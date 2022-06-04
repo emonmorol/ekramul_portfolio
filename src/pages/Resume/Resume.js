@@ -32,7 +32,7 @@ const Resume = () => {
           Ekramul hasan
         </p>
         <p className="text-accent font-bold text-3xl lg:text-5xl mb-10">
-          My Projects
+          My Resume
         </p>
       </div>
       <div className="min-h-[50vh]">

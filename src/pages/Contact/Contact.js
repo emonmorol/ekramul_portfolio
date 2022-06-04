@@ -36,7 +36,6 @@ const Contact = () => {
       setIsLoading(false);
     })();
   };
-  console.log(isLoading);
 
   return (
     <div id="contact" className="max-w-7xl mx-auto">

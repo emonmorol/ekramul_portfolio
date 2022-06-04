@@ -1,85 +1,49 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import forge from "../../assets/images/forge-the-drill.web.app.png";
+import bagsq from "../../assets/images/bagsq12.png";
+import blood from "../../assets/images/blood-buddies-donation.png";
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Mern Development",
+      title: "Forge The Drill",
+      name: "Manufacturer Company Web App",
       description:
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
-      icon: (
-        <>
-          <i className="fa-solid fa-layer-group"></i>
-        </>
-      ),
       image: forge,
+      links: {
+        live: "https://forge-the-drill.web.app/",
+        client: "https://github.com/emonmorol/forge-the-drill",
+        server: "https://github.com/emonmorol/forge-the-drill-server",
+      },
     },
     {
       id: 2,
-      title: "Frontend Development",
+      title: "BagsQ",
+      name: "Stock Control And Product Management Website",
       description:
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
-      icon: (
-        <>
-          <i className="fa-solid fa-code"></i>
-        </>
-      ),
-      image:
-        "https://www.flexgigzz.com/wp-content/uploads/2021/04/bexer-bootstrap-business-template.jpg",
+      image: bagsq,
+      links: {
+        live: "https://bagsq12.web.app/",
+        client: "https://github.com/emonmorol/bagsq-client",
+        server: "https://github.com/emonmorol/bagsq-server",
+      },
     },
     {
       id: 3,
-      title: "Backend Development",
+      title: "Blood Buddies",
+      name: "Blood Donation And Blood Receiving site",
       description:
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
-      icon: (
-        <>
-          <i className="fa-solid fa-server"></i>
-        </>
-      ),
-      image:
-        "https://www.flexgigzz.com/wp-content/uploads/2021/04/bexer-bootstrap-business-template.jpg",
-    },
-    {
-      id: 4,
-      title: "React Development",
-      description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
-      icon: (
-        <>
-          <i className="fa-brands fa-react"></i>
-        </>
-      ),
-      image:
-        "https://www.flexgigzz.com/wp-content/uploads/2021/04/bexer-bootstrap-business-template.jpg",
-    },
-    {
-      id: 5,
-      title: "Javascript Development",
-      description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
-      icon: (
-        <>
-          <i className="fa-brands fa-js-square"></i>
-        </>
-      ),
-      image:
-        "https://www.flexgigzz.com/wp-content/uploads/2021/04/bexer-bootstrap-business-template.jpg",
-    },
-    {
-      id: 6,
-      title: "Javascript Development",
-      description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
-      icon: (
-        <>
-          <i className="fa-brands fa-js-square"></i>
-        </>
-      ),
-      image:
-        "https://www.flexgigzz.com/wp-content/uploads/2021/04/bexer-bootstrap-business-template.jpg",
+      image: blood,
+      links: {
+        live: "https://blood-buddies-donation.web.app/",
+        client: "https://github.com/emonmorol/blood_boddies",
+        server: "https://github.com/emonmorol/blood-buddies-server",
+      },
     },
   ];
 
@@ -90,7 +54,7 @@ const Portfolio = () => {
           VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
         </p>
         <p className="text-accent font-bold text-3xl lg:text-5xl mb-10">
-          Portfolio
+          My Full Stack Projects
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">

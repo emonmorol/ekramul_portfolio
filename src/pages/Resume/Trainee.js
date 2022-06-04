@@ -9,10 +9,10 @@ const Trainee = () => {
   };
   return (
     <div>
-      <div className="relative max-w-2xl mx-auto  p-5 lg:p-10  mt-16">
+      <div className="relative max-w-2xl mx-auto mt-16">
         <div className="absolute top-0 h-full border-r-2 border-black left-3"></div>
         <ul className="space-y-2">
-          <EducationCard education={trainee} />
+          <EducationCard key={trainee.id} education={trainee} />
         </ul>
       </div>
     </div>

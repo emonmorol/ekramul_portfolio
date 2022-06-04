@@ -54,26 +54,26 @@ const Home = () => {
             </p>
           </div>
           <div className="flex gap-5 my-10 -mb-20">
-            <a
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              className="anchor-button py-[0.85rem] px-4 lg:px-12"
-              href="https://drive.google.com/file/d/1YL9Vqn8aBaS0F8xo-eWu4DIQq9Z6DwkX/view"
-              target="_blank"
-              rel="noreferrer"
-            >
-              My Resume
-            </a>
+            <div data-aos="zoom-in" data-aos-duration="1000">
+              <a
+                className="anchor-button py-[0.85rem] px-4 lg:px-12"
+                href="https://drive.google.com/file/d/1YL9Vqn8aBaS0F8xo-eWu4DIQq9Z6DwkX/view"
+                target="_blank"
+                rel="noreferrer"
+              >
+                My Resume
+              </a>
+            </div>
 
-            <Link
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              smooth
-              className="anchor-button py-[0.85rem] px-4 lg:px-12"
-              to="/landing#contact"
-            >
-              Hire me
-            </Link>
+            <div data-aos="zoom-in" data-aos-duration="1000">
+              <Link
+                smooth
+                className="anchor-button py-[0.85rem] px-4 lg:px-12"
+                to="/landing#contact"
+              >
+                Hire me
+              </Link>
+            </div>
           </div>
           <div className="text-accent flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between pr-0 lg:pr-36 mt-32">
             <div>
