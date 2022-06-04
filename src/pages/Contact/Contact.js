@@ -25,7 +25,7 @@ const Contact = () => {
         setIsLoading(false);
         swal(
           "Successful",
-          "I Have Got Your Mail, I will get back to your soon.",
+          "I Have Got Your Mail, I will get back to you soon.",
           "success",
           {
             className: "rounded-3xl",

@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <div id="home" className="min-w-screen p-5">
       <Home />
-      <SectionDivider margin={""} />
+      <SectionDivider margin={"lg:-mt-64"} />
       <Services />
       <SectionDivider margin={"mt-20"} />
       <Portfolio />
