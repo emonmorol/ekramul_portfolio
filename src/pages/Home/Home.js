@@ -6,22 +6,21 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
-    <div className="min-h-screen p-5">
+    <div className="min-h-screen">
       <div className="top-content flex flex-col-reverse lg:flex-row justify-between items-center">
         <div className="w-full lg:w-2/3">
           <div>
             <p
               data-aos="fade-down-right"
-              data-aos-duration="500"
-              className=" text-left text-base text-accent"
+              data-aos-duration="1000"
+              className=" text-left text-xs lg:text-sm text-accent"
             >
               Welcome To My World
             </p>
             <p
               data-aos="fade-down-right"
-              data-aos-duration="600"
-              data-aos-delay="400"
-              className="font-semibold my-7 text-left text-4xl lg:text-6xl text-white leading-snug"
+              data-aos-duration="1000"
+              className="font-semibold my-7 text-left text-3xl lg:text-6xl text-white leading-snug"
             >
               Hi, I'm <span className="text-secondary">Ekramul Hasan</span>
               <br />
@@ -41,8 +40,7 @@ const Home = () => {
             </p>
             <p
               data-aos="fade-down-right"
-              data-aos-duration="600"
-              data-aos-delay="900"
+              data-aos-duration="1000"
               className="text-left text-base text-accent w-full lg:w-[60ch]"
             >
               Hi I am a Mern Stack developer And I can build your website as you
@@ -58,9 +56,8 @@ const Home = () => {
           <div className="flex gap-5 my-10 -mb-20">
             <a
               data-aos="zoom-in"
-              data-aos-duration="600"
-              data-aos-delay="1000"
-              className="anchor-button"
+              data-aos-duration="1000"
+              className="anchor-button py-[0.85rem] px-4 lg:px-12"
               href="https://drive.google.com/file/d/1YL9Vqn8aBaS0F8xo-eWu4DIQq9Z6DwkX/view"
               target="_blank"
               rel="noreferrer"
@@ -70,10 +67,9 @@ const Home = () => {
 
             <Link
               data-aos="zoom-in"
-              data-aos-duration="600"
-              data-aos-delay="1000"
+              data-aos-duration="1000"
               smooth
-              className="anchor-button"
+              className="anchor-button py-[0.85rem] px-4 lg:px-12"
               to="/landing#contact"
             >
               Hire me
@@ -83,87 +79,69 @@ const Home = () => {
             <div>
               <h5
                 data-aos="fade-right"
-                data-aos-duration="500"
-                data-aos-delay="1000"
+                data-aos-duration="1000"
                 className="text-left mb-3 uppercase tracking-wide"
               >
                 Find Me
               </h5>
-              <div className="flex gap-5">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="flex gap-5"
+              >
                 <a
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="1000"
                   href="https://github.com/emonmorol"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <div className="action-box">
                     {" "}
-                    <i class="fa-brands fa-github"></i>
+                    <i className="fa-brands fa-github"></i>
                   </div>
                 </a>
                 <a
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="1000"
                   href="https://www.linkedin.com/in/ekramul-hasan/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <div className="action-box">
                     {" "}
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
                   </div>
                 </a>
                 <a
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="1000"
                   href="https://www.facebook.com/ekramul.hasan.morol/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <div className="action-box">
                     {" "}
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                   </div>
                 </a>
               </div>
             </div>
             <div>
               <h5
-                data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="1000"
+                data-aos="fade-down"
+                data-aos-duration="1000"
                 className="text-left mb-3 uppercase tracking-wide"
               >
                 Best skills
               </h5>
-              <div className="flex gap-5">
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="1000"
-                  className="action-box text-blue-500"
-                >
-                  <i class="fa-brands fa-react"></i>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="flex gap-5"
+              >
+                <div className="action-box text-blue-500">
+                  <i className="fa-brands fa-react"></i>
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="1000"
-                  className="action-box text-yellow-500"
-                >
-                  <i class="fa-brands fa-js-square"></i>
+                <div className="action-box text-yellow-500">
+                  <i className="fa-brands fa-js-square"></i>
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="1000"
-                  className="action-box text-blue-500"
-                >
-                  <i class="fa-brands fa-css3-alt"></i>
+                <div className="action-box text-blue-500">
+                  <i className="fa-brands fa-css3-alt"></i>
                 </div>
               </div>
             </div>
@@ -172,7 +150,7 @@ const Home = () => {
         <div
           data-aos="zoom-in"
           data-aos-duration="2000"
-          className="image w-[22rem] lg:w-[32rem] h-[25rem] lg:h-[35rem] flex justify-end bg-white relative mb-20 lg:mt-0"
+          className="image w-[22rem] lg:w-[32rem] h-[25rem] lg:h-[35rem] flex justify-end bg-white relative mb-20 -mt-8 lg:mt-0"
         >
           <img className="absolute bottom-0" src={ekramul} alt="" />
         </div>

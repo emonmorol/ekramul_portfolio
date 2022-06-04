@@ -10,28 +10,28 @@ const ProjectCard = ({ project }) => {
       className="portfolio-card text-accent hover:text-white"
     >
       <div className="text-left">
-        <div className="image-content rounded-xl overflow-hidden">
+        <div className="image-content w-full rounded-xl overflow-hidden">
           <img src={image} alt="" />
         </div>
         <div>
           <h2 className="font-semibold text-sm my-4 text-secondary">{title}</h2>
           <h2 className="project-title font-semibold text-xl my-4">
             {title}
-            <i class="title-icon text-secondary ml-2 fa-solid fa-arrow-turn-up"></i>
+            <i className="title-icon text-secondary ml-2 fa-solid fa-arrow-turn-up"></i>
           </h2>
         </div>
         <div className="button-content flex justify-between mt-5">
-          <button className="project-button">
-            <i class="text-sm text-secondary mr-2 fa-solid fa-circle-dot"></i>
+          <button className="project-button text-[10px] lg:text-[12px]">
+            <i className="text-sm text-secondary mr-2 fa-solid fa-circle-dot"></i>
             View Live
           </button>
-          <button className="project-button">
-            <i class="text-sm text-secondary mr-2 fa-brands fa-github"></i>
+          <button className="project-button text-[10px] lg:text-[12px]">
+            <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
             Client Code
           </button>
-          <button className="project-button">
+          <button className="project-button text-[10px] lg:text-[12px]">
             {" "}
-            <i class="text-sm text-secondary mr-2 fa-brands fa-github"></i>
+            <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
             Server Code
           </button>
         </div>

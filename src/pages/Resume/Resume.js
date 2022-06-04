@@ -28,31 +28,41 @@ const Resume = () => {
   return (
     <div id="resume" className="text-white max-w-7xl mx-auto">
       <div data-aos="zoom-in" data-aos-duration="500">
-        <p className="text-base text-secondary uppercase">Ekramul hasan</p>
-        <p className="text-accent font-bold text-6xl mb-10">Resume </p>
+        <p className="text-xs lg:text-sm  text-secondary uppercase">
+          Ekramul hasan
+        </p>
+        <p className="text-accent font-bold text-3xl lg:text-5xl mb-10">
+          My Projects
+        </p>
       </div>
       <div className="min-h-[50vh]">
         <div
           data-aos="zoom-in-up"
           data-aos-duration="1000"
-          class="tab-button-content w-full"
+          className="tab-button-content w-full"
         >
           <label
             onClick={handleSkill}
-            class={`tab-button ${skill && "active-tab"} w-1/3`}
+            className={`tab-button py-7 px-14  text-xs lg:text-base ${
+              skill && "active-tab"
+            } w-1/3`}
           >
             Profession Skills
           </label>
           <label
             onClick={handleEducation}
-            class={`tab-button ${education && "active-tab"} w-1/3`}
+            className={`tab-button py-7 px-14  text-xs lg:text-base ${
+              education && "active-tab"
+            } w-1/3`}
             aria-current="page"
           >
             Education
           </label>
           <label
             onClick={handleTrainee}
-            class={`tab-button ${trainee && "active-tab"} w-1/3`}
+            className={`tab-button py-7 px-14  text-xs lg:text-base ${
+              trainee && "active-tab"
+            } w-1/3`}
           >
             Professional Trainee
           </label>

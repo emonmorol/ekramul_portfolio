@@ -4,10 +4,10 @@ import emon from "../../assets/images/emon_morol.png";
 const Footer = () => {
   return (
     <div className="footer-content pb-10 -mt-10">
-      <footer class="footer justify-center items-center gap-24 p-10 text-neutral-content max-w-7xl mx-auto">
+      <footer className="footer justify-center items-center gap-24 p-10 text-neutral-content max-w-7xl mx-auto">
         <div className="flex flex-col items-center">
-          <div class="avatar">
-            <div class="w-12 rounded-full">
+          <div className="avatar">
+            <div className="w-12 rounded-full">
               <img className=" bg-white" src={emon} alt="" />
             </div>
             <h2>Ekramul</h2>
@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="text-gray-600">All Rights Reserved @ Ekramul Hasan</p>
         </div>
         <div>
-          <span class="footer-title">Social</span>
+          <span className="footer-title">Social</span>
           <div className="flex gap-5">
             <a
               href="https://github.com/emonmorol"
@@ -24,7 +24,7 @@ const Footer = () => {
             >
               <div className="action-box">
                 {" "}
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </div>
             </a>
             <a
@@ -34,7 +34,7 @@ const Footer = () => {
             >
               <div className="action-box">
                 {" "}
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i className="fa-brands fa-linkedin-in"></i>
               </div>
             </a>
             <a
@@ -44,7 +44,7 @@ const Footer = () => {
             >
               <div className="action-box">
                 {" "}
-                <i class="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-facebook-f"></i>
               </div>
             </a>
           </div>

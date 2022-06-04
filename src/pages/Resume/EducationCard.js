@@ -8,9 +8,9 @@ const EducationCard = ({ education }) => {
       <div
         data-aos="zoom-in-left"
         data-aos-duration="1500"
-        class="timeline-card flex items-center mb-10"
+        className="timeline-card flex items-center mb-10"
       >
-        <div className="education-card ml-10 text-left text-accent">
+        <div className="education-card p-5 lg:p-10 ml-10 text-left text-accent">
           <p className="text-xl text-white font-semibold">{degree}</p>
           <SectionDivider margin={"mb-3 my-3"} />
           <p>{institute}</p>

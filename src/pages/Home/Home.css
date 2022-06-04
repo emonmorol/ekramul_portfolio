@@ -31,18 +31,17 @@
 }
 
 .anchor-button {
-  padding: 0.85rem 3rem;
   text-transform: uppercase;
   color: #ff004c;
   font-weight: 600;
   position: relative;
-  bottom: 0px;
+  transform: translateY(0px);
   z-index: 1;
   letter-spacing: 2px;
   border-radius: 5px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
   box-shadow: 20px 20px 40px #0d0e10, -20px -20px 40px #353a40;
-  transition: all 0.3s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
 }
 
 .anchor-button::after {
@@ -63,5 +62,5 @@
   opacity: 1;
 }
 .anchor-button:hover {
-  bottom: 5px;
+  transform: translateY(20px);
 }

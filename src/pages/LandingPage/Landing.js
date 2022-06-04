@@ -9,9 +9,9 @@ import Services from "../Services/Services";
 
 const Landing = () => {
   return (
-    <div id="home" className="min-w-screen">
+    <div id="home" className="min-w-screen p-5">
       <Home />
-      <SectionDivider margin={"-mt-32"} />
+      <SectionDivider margin={""} />
       <Services />
       <SectionDivider margin={"mt-20"} />
       <Portfolio />

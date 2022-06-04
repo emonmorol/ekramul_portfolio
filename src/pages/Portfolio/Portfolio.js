@@ -11,7 +11,7 @@ const Portfolio = () => {
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-solid fa-layer-group"></i>
+          <i className="fa-solid fa-layer-group"></i>
         </>
       ),
       image: forge,
@@ -23,7 +23,7 @@ const Portfolio = () => {
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-solid fa-code"></i>
+          <i className="fa-solid fa-code"></i>
         </>
       ),
       image:
@@ -36,7 +36,7 @@ const Portfolio = () => {
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-solid fa-server"></i>
+          <i className="fa-solid fa-server"></i>
         </>
       ),
       image:
@@ -49,7 +49,7 @@ const Portfolio = () => {
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-brands fa-react"></i>
+          <i className="fa-brands fa-react"></i>
         </>
       ),
       image:
@@ -62,7 +62,7 @@ const Portfolio = () => {
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-brands fa-js-square"></i>
+          <i className="fa-brands fa-js-square"></i>
         </>
       ),
       image:
@@ -75,7 +75,7 @@ const Portfolio = () => {
         "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
       icon: (
         <>
-          <i class="fa-brands fa-js-square"></i>
+          <i className="fa-brands fa-js-square"></i>
         </>
       ),
       image:
@@ -86,12 +86,14 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="text-white max-w-7xl mx-auto">
       <div data-aos="zoom-in" data-aos-duration="500">
-        <p className="text-base text-secondary uppercase">
+        <p className="text-xs lg:text-sm text-secondary uppercase">
           VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
         </p>
-        <p className="text-accent font-bold text-6xl mb-10">Portfolio</p>
+        <p className="text-accent font-bold text-3xl lg:text-5xl mb-10">
+          Portfolio
+        </p>
       </div>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

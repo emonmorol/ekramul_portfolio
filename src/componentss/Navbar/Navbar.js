@@ -48,28 +48,28 @@ const Navbar = () => {
 
   return (
     <div className={`navigation ${navbar ? "active" : ""} z-50`}>
-      <div class="navbar max-w-7xl mx-auto">
-        <div class="navbar-start w-full lg:w-1/4">
-          <div class="dropdown dropdown-end w-full flex justify-between ">
-            <div class="avatar">
-              <div class="w-12 rounded-full">
+      <div className="navbar max-w-7xl mx-auto">
+        <div className="navbar-start w-full lg:w-1/4">
+          <div className="dropdown dropdown-end w-full flex justify-between ">
+            <div className="avatar">
+              <div className="w-12 rounded-full">
                 <img src={emon} alt="" />
               </div>
               <h4>Ekramul</h4>
             </div>
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <i class="text-3xl fa-solid fa-bars"></i>
+            <label tabIndex="0" className="btn btn-ghost lg:hidden">
+              <i className="text-3xl fa-solid fa-bars"></i>
             </label>
             <ul
-              tabindex="0"
-              class="menu py-2 navbar-end menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              tabIndex="0"
+              className="menu py-2 navbar-end menu-compact dropdown-content mt-3 p-2 shadow bg-primary text-accent rounded-box w-52"
             >
               {links}
             </ul>
           </div>
         </div>
-        <div class="navbar-end hidden w-full lg:flex">
-          <ul class="menu w-full flex py-2 justify-end menu-horizontal p-0">
+        <div className="navbar-end hidden w-full lg:flex">
+          <ul className="menu w-full flex py-2 justify-end menu-horizontal p-0">
             {links}
           </ul>
         </div>

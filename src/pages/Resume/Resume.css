@@ -15,7 +15,6 @@
   z-index: 1;
   text-transform: uppercase;
   color: white;
-  padding: 30px 60px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -116,9 +115,8 @@
   position: relative;
   bottom: 0px;
   flex-direction: column;
-  padding: 3rem;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   z-index: 1;
   border-radius: 12px;
   background: linear-gradient(-45deg, #212428, #212428);

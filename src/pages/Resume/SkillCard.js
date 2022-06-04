@@ -9,7 +9,8 @@ const SkillCard = ({ skill }) => {
       data-aos-delay="200"
       className="flex items-center relative bottom-0 hover:bottom-2 transition-all duration-300"
     >
-      <span className={`${color} mr-2`}>{icon}</span> <span>{name}</span>
+      <span className={`${color} mr-2`}>{icon}</span>
+      <span className="">{name}</span>
     </p>
   );
 };
