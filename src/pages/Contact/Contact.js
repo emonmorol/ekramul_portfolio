@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import contact from "../../assets/images/contact1.webp";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import swal from "sweetalert";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (message) => {
+    setIsLoading(true);
+    (async () => {
+      const { data } = await axios.post(
+        "https://ekramul-hasan.herokuapp.com/email",
+        message
+      );
+      if (data) {
+        setIsLoading(false);
+        swal(
+          "Successful",
+          "I Have Got Your Mail, I will get back to your soon.",
+          "success",
+          {
+            className: "rounded-3xl",
+          }
+        );
+        reset();
+      }
+      setIsLoading(false);
+    })();
+  };
+  console.log(isLoading);
 
   return (
     <div id="contact" className="max-w-7xl mx-auto">
@@ -94,18 +119,26 @@ const Contact = () => {
               <div class="form-control w-full">
                 <label class="label">Full Name</label>
                 <input
-                  {...register("name", { required: true })}
+                  {...register("name", {
+                    required: {
+                      value: true,
+                      message: "Name is required",
+                    },
+                  })}
                   type="text"
-                  class="input input-bordered w-full"
+                  class="input input-bordered w-full focus:border-secondary"
                 />
+                {errors?.name && (
+                  <span class="error">{errors.name.message}</span>
+                )}
               </div>
 
               <div class="form-control w-full">
                 <label class="label">Contact Number</label>
                 <input
-                  {...register("phone", { required: true })}
+                  {...register("phone")}
                   type="number"
-                  class="input input-bordered w-full"
+                  class="input input-bordered w-full focus:border-secondary"
                 />
               </div>
             </div>
@@ -113,30 +146,59 @@ const Contact = () => {
             <div class="mb-8 form-control w-full">
               <label class="label">Email</label>
               <input
-                {...register("email", { required: true })}
+                {...register("email", {
+                  required: {
+                    value: true,
+                    message: "Email is required",
+                  },
+                })}
                 type="text"
-                class="input input-bordered w-full"
+                class="input input-bordered w-full focus:border-secondary"
               />
+              {errors?.email && (
+                <span class="error">{errors.email.message}</span>
+              )}
             </div>
 
             <div class="mb-8 form-control w-full">
               <label class="label">Subject</label>
               <input
-                {...register("subject", { required: true })}
+                {...register("subject", {
+                  required: {
+                    value: true,
+                    message: "Subject is required",
+                  },
+                })}
                 type="text"
-                class="input input-bordered w-full"
+                class="input input-bordered w-full focus:border-secondary"
               />
+              {errors?.subject && (
+                <span class="error">{errors.subject.message}</span>
+              )}
             </div>
 
             <div class="mb-8 form-control">
               <label class="label">Your Message</label>
               <textarea
-                {...register("message", { required: true })}
-                class="textarea textarea-bordered h-36"
+                {...register("message", {
+                  required: {
+                    value: true,
+                    message: "Message is required",
+                  },
+                })}
+                class="textarea textarea-bordered  focus:border-secondary h-36"
               ></textarea>
+              {errors?.message && (
+                <span class="error">{errors.message.message}</span>
+              )}
             </div>
 
-            <button className="send-mail-button w-full" type="submit">
+            <button
+              className={`send-mail-button w-full ${
+                isLoading ? "loading" : ""
+              }`}
+              type="submit"
+            >
               <span> Send Mail</span> <i class="fa-solid fa-chevron-right"></i>
             </button>
           </form>

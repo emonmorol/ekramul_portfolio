@@ -8,24 +8,6 @@
   transition: color 0.3s ease;
 }
 
-/* .contact-card::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: linear-gradient(-45deg, #19191b, #23272b);
-  border-radius: 5px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact-card:hover::after {
-  opacity: 1;
-} */
-
 .contact-image img {
   transform: scale(1);
   transition: transform 0.3s ease;
@@ -37,13 +19,13 @@
 
 .contact-card form input {
   background: #191b1e;
-  border: 3px solid black;
+  border: 2px solid black;
   padding: 25px;
   box-shadow: inset 2px 2px 7px #0a0b0c, inset -2px -2px 7px #282b30;
 }
 .contact-card form textarea {
   background: #191b1e;
-  border: 3px solid black;
+  border: 2px solid black;
   padding: 15px 20px;
   box-shadow: inset 2px 2px 7px #0a0b0c, inset -2px -2px 7px #282b30;
 }
@@ -98,4 +80,14 @@
 }
 .send-mail-button:hover i {
   margin-left: 20px;
+}
+
+.error {
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: -18px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
 }

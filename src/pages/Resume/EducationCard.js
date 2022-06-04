@@ -5,7 +5,11 @@ const EducationCard = ({ education }) => {
   const { degree, institute, year } = education;
   return (
     <li>
-      <div class="timeline-card flex items-center mb-10">
+      <div
+        data-aos="zoom-in-left"
+        data-aos-duration="1500"
+        class="timeline-card flex items-center mb-10"
+      >
         <div className="education-card ml-10 text-left text-accent">
           <p className="text-xl text-white font-semibold">{degree}</p>
           <SectionDivider margin={"mb-3 my-3"} />
