@@ -71,6 +71,91 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <div className="block relative lg:hidden z-[1000]">
+        <nav class="fixed bottom-0 inset-x-0 bottom-navigation rounded-tl-2xl rounded-tr-2xl grid grid-cols-7 text-xs text-white font-extralight font-poppins">
+          <Link
+            className="flex flex-col items-center mx-auto px-3 py-3"
+            smooth
+            to="/landing#home"
+          >
+            <span>
+              {" "}
+              <i class="text-2xl fa-solid fa-house"></i>
+            </span>
+            <span>Home</span>
+          </Link>
+
+          <Link
+            className="flex flex-col items-center mx-auto px-3 py-3"
+            smooth
+            to="/landing#services"
+          >
+            <span>
+              {" "}
+              <i class="text-2xl fa-solid fa-code"></i>
+            </span>
+            <span>Services</span>
+          </Link>
+
+          <Link
+            className="flex flex-col items-center mx-auto px-3 py-3"
+            smooth
+            to="/landing#portfolio"
+          >
+            <span>
+              {" "}
+              <i class="text-2xl fa-solid fa-bars-progress"></i>
+            </span>
+            <span>Portfolio</span>
+          </Link>
+
+          <Link
+            className="flex flex-col items-center mx-auto px-3 py-3"
+            smooth
+            to="/landing#resume"
+          >
+            <span>
+              {" "}
+              <i class="text-2xl fa-solid fa-folder"></i>
+            </span>
+            <span>Resume</span>
+          </Link>
+
+          <Link
+            className="flex flex-col items-center mx-auto px-3 py-3"
+            smooth
+            to="/landing#contact"
+          >
+            <span>
+              {" "}
+              <i class="text-2xl fa-solid fa-user"></i>
+            </span>
+            <span>About</span>
+          </Link>
+          <Link
+            className="flex flex-col items-center mx-auto px-3 py-3"
+            smooth
+            to="/landing#contact"
+          >
+            <span>
+              {" "}
+              <i class="text-2xl fa-brands fa-blogger-b"></i>
+            </span>
+            <span>Blogs</span>
+          </Link>
+          <Link
+            className="flex flex-col items-center mx-auto px-3 py-3"
+            smooth
+            to="/landing#contact"
+          >
+            <span>
+              {" "}
+              <i class="text-2xl fa-solid fa-envelope"></i>
+            </span>
+            <span>Contact</span>
+          </Link>
+        </nav>
+      </div>
     </>
   );
 };
