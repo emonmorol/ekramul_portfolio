@@ -1,17 +1,14 @@
 import React from "react";
 import profile from "../../assets/images/ekramul.png";
+import "./About.css";
 
 const About = () => {
   return (
     <div className="bg-primary flex items-center min-h-[95vh] text-accent">
       <div className="flex flex-col gap-10 items-center justify-center max-w-7xl mx-auto p-5">
         <div className="flex flex-col lg:flex-row p-4 justify-center items-center gap-10 w-full mb-32">
-          <div>
-            <img
-              className="w-96 h-860 border-2 border-gray-400 shadow-lg overflow-hidden"
-              src={profile}
-              alt=""
-            />
+          <div className="about-box w-96 h-860 overflow-hidden">
+            <img className="inside-img w-96 h-830" src={profile} alt="" />
           </div>
           <div className="flex flex-col items-start">
             <h2 className="text-4xl text-secondary font-bold ">

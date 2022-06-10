@@ -13,6 +13,8 @@ import { useEffect } from "react";
 import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 import Blogs from "./pages/Blogs/Blogs";
 import About from "./pages/About/About";
+import SectionDivider from "./componentss/SectionDivider/SectionDivider";
+import Footer from "./componentss/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -34,6 +36,8 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
+      <SectionDivider margin={"mt-20"} />
+      <Footer />
     </div>
   );
 }

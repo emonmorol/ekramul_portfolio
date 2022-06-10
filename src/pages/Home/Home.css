@@ -18,14 +18,15 @@
   bottom: 0px;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 50% 30% 50% 30%;
   background: linear-gradient(-45deg, #212428, #212428);
   box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
   transition: all 0.3s ease-in-out;
 }
 .action-box:hover {
-  position: relative;
-  bottom: 5px;
+  border-radius: 30% 50% 30% 50%;
+  /* position: relative;
+  bottom: 5px; */
   background: linear-gradient(-45deg, #19191b, #23272b);
   transition: all 0.2s ease-in-out;
 }

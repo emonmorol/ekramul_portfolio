@@ -1,0 +1,10 @@
+.about-box {
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
+}
+.inside-img {
+  box-shadow: inset 5px 5px 10px #101113, inset -3px -3px 10px #32373d;
+}
+.about-box:hover .inside-img {
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
+  transition: box-shadow 0.4s;
+}

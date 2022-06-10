@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import emon from "../../assets/images/emon_morol.png";
+import emon from "../../assets/images/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -22,10 +22,12 @@ const Navbar = () => {
         <div className="navbar max-w-7xl mx-auto">
           <div className="navbar-start w-full lg:w-1/4">
             <div className="avatar w-full px-4 flex items-center justify-between lg:justify-start">
-              <div className=" w-8 lg:w-10 rounded-full">
+              <div className="w-6 lg:w-10 rounded-full">
                 <img src={emon} alt="" />
               </div>
-              <h4>Ekramul</h4>
+              <h4 className="text-sm lg:text-lg uppercase font-extrabold font-mono">
+                Ekramul
+              </h4>
             </div>
           </div>
           <div className="navbar-end hidden w-full lg:flex">

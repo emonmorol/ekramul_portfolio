@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../componentss/Footer/Footer";
 import SectionDivider from "../../componentss/SectionDivider/SectionDivider";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
@@ -19,8 +18,6 @@ const Landing = () => {
       <Resume />
       <SectionDivider margin={"mt-20"} />
       <Contact />
-      <SectionDivider margin={"mt-20"} />
-      <Footer />
     </div>
   );
 };
