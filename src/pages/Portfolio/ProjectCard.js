@@ -1,13 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Portfolio.css";
 
 const ProjectCard = ({ project }) => {
   const {
+    id,
     title,
     image,
     name,
-    links: { live, server, client },
+    links: { live },
   } = project;
+
   return (
     <div
       data-aos="zoom-in-right"
@@ -26,6 +29,13 @@ const ProjectCard = ({ project }) => {
           </h2>
         </div>
         <div className="button-content flex justify-between mt-5">
+          <Link
+            className="project-button text-[10px] lg:text-[12px]"
+            to={`/project/${id}`}
+          >
+            <i className="text-sm text-secondary mr-2 fa-solid fa-circle-dot"></i>
+            View Details
+          </Link>
           <a
             href={live}
             target="_blank"
@@ -34,25 +44,6 @@ const ProjectCard = ({ project }) => {
           >
             <i className="text-sm text-secondary mr-2 fa-solid fa-circle-dot"></i>
             View Live
-          </a>
-          <a
-            href={client}
-            target="_blank"
-            rel="noreferrer"
-            className="project-button text-[10px] lg:text-[12px]"
-          >
-            <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
-            Client Code
-          </a>
-          <a
-            href={server}
-            target="_blank"
-            rel="noreferrer"
-            className="project-button text-[10px] lg:text-[12px]"
-          >
-            {" "}
-            <i className="text-sm text-secondary mr-2 fa-brands fa-github"></i>
-            Server Code
           </a>
         </div>
       </div>

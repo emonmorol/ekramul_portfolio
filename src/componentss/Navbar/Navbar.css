@@ -20,3 +20,16 @@
   color: #d9e1eb;
   text-transform: uppercase;
 }
+
+.bottom-navigation {
+  background: linear-gradient(-45deg, #212428, #212428);
+  box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
+}
+.bottom-navigation a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.bottom-navigation a:hover {
+  color: #0097e6;
+}

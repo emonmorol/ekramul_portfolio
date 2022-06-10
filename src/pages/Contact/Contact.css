@@ -42,7 +42,7 @@
   position: relative;
   z-index: 1;
   text-transform: uppercase;
-  color: #ff014f;
+  color: #0097e6;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@
 
 .send-mail-button:hover {
   box-shadow: 5px 5px 10px #101113, -3px -3px 10px #32373d;
-  color: #ff014f;
+  color: #0097e6;
 }
 .send-mail-button i {
   margin-left: 8px;

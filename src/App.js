@@ -10,6 +10,7 @@ import Services from "./pages/Services/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/landing#resume" element={<Resume />} />
         <Route path="/landing#services" element={<Services />} />
         <Route path="/landing#contact" element={<Contact />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
     </div>
   );

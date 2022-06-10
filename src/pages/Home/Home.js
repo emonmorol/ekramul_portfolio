@@ -13,14 +13,16 @@ const Home = () => {
             <p
               data-aos="fade-down-right"
               data-aos-duration="1000"
-              className=" text-left text-xs lg:text-sm text-accent"
+              className="uppercase text-left text-xs lg:text-sm text-accent"
             >
               Welcome To My World
             </p>
             <p
               data-aos="fade-down-right"
+              yarn
+              start
               data-aos-duration="1000"
-              className="font-semibold my-7 text-left text-3xl lg:text-6xl text-white leading-snug"
+              className="uppercase font-semibold my-7 text-left text-3xl lg:text-6xl text-white leading-snug"
             >
               Hi, I'm <span className="text-secondary">Ekramul Hasan</span>
               <br />
