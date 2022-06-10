@@ -7,7 +7,7 @@ const Services = () => {
       id: 1,
       title: "Mern Development",
       description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
+        "I can build your full stack website with MongoDB, ExpressJS, ReactJS, NodeJS",
       icon: (
         <>
           <i className="fa-solid fa-layer-group"></i>
@@ -18,7 +18,7 @@ const Services = () => {
       id: 2,
       title: "Frontend Development",
       description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
+        "I'm A Frontend specialist. I have created many projects UI. I can be your frontend Engineer.",
       icon: (
         <>
           <i className="fa-solid fa-code"></i>
@@ -29,7 +29,7 @@ const Services = () => {
       id: 3,
       title: "Backend Development",
       description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
+        "I'm A backend Developer. I have created many projects Server Side Api. I can be your Backend Engineer.",
       icon: (
         <>
           <i className="fa-solid fa-server"></i>
@@ -40,7 +40,7 @@ const Services = () => {
       id: 4,
       title: "React Development",
       description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
+        "I'm A React Developer. I have created many single page react application. I can be your React Developer.",
       icon: (
         <>
           <i className="fa-brands fa-react"></i>
@@ -51,7 +51,7 @@ const Services = () => {
       id: 5,
       title: "Javascript Development",
       description:
-        "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris",
+        "I'm a Javascript Developer. I have created many website using Javascript Developer. I can be your Javascript Developer.",
       icon: (
         <>
           <i className="fa-brands fa-js-square"></i>

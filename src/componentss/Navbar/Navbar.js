@@ -6,8 +6,6 @@ import "./Navbar.css";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
-  const links = <></>;
-
   const changeBg = () => {
     if (window.scrollY >= 200) {
       setNavbar(true);
@@ -72,7 +70,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="block relative lg:hidden z-[1000]">
-        <nav class="fixed bottom-0 inset-x-0 bottom-navigation rounded-tl-2xl rounded-tr-2xl grid grid-cols-7 text-[8px] px-4 text-white font-extralight font-poppins">
+        <nav className="fixed bottom-0 inset-x-0 bottom-navigation rounded-tl-2xl rounded-tr-2xl grid grid-cols-7 text-[8px] px-4 text-white font-extralight font-poppins">
           <Link
             className="flex flex-col items-center mx-auto px-3 py-3"
             smooth
@@ -80,7 +78,7 @@ const Navbar = () => {
           >
             <span>
               {" "}
-              <i class="text-xl fa-solid fa-house"></i>
+              <i className="text-xl fa-solid fa-house"></i>
             </span>
             <span>Home</span>
           </Link>
@@ -92,7 +90,7 @@ const Navbar = () => {
           >
             <span>
               {" "}
-              <i class="text-xl fa-solid fa-code"></i>
+              <i className="text-xl fa-solid fa-code"></i>
             </span>
             <span>Services</span>
           </Link>
@@ -104,7 +102,7 @@ const Navbar = () => {
           >
             <span>
               {" "}
-              <i class="text-xl fa-solid fa-bars-progress"></i>
+              <i className="text-xl fa-solid fa-suitcase"></i>
             </span>
             <span>Portfolio</span>
           </Link>
@@ -116,7 +114,7 @@ const Navbar = () => {
           >
             <span>
               {" "}
-              <i class="text-xl fa-solid fa-folder"></i>
+              <i className="text-xl fa-solid fa-folder"></i>
             </span>
             <span>Resume</span>
           </Link>
@@ -128,7 +126,7 @@ const Navbar = () => {
           >
             <span>
               {" "}
-              <i class="text-xl fa-solid fa-user"></i>
+              <i className="text-xl fa-solid fa-user"></i>
             </span>
             <span>About</span>
           </Link>
@@ -139,7 +137,7 @@ const Navbar = () => {
           >
             <span>
               {" "}
-              <i class="text-xl fa-brands fa-blogger-b"></i>
+              <i className="text-xl fa-brands fa-blogger-b"></i>
             </span>
             <span>Blogs</span>
           </Link>
@@ -150,7 +148,7 @@ const Navbar = () => {
           >
             <span>
               {" "}
-              <i class="text-xl fa-solid fa-envelope"></i>
+              <i className="text-xl fa-solid fa-envelope"></i>
             </span>
             <span>Contact</span>
           </Link>
