@@ -109,7 +109,7 @@ const ProjectDetails = () => {
     <div
       data-aos="zoom-in-right"
       data-aos-duration="1500"
-      className="detail-card lg:min-h-screen p-8 lg:p-40 hover:text-white"
+      className="detail-card lg:min-h-screen p-5 lg:p-40 hover:text-white"
     >
       <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8 lg:h-[60vh] text-left">
         <div className="image-detail w-full h-80 lg:w-1/2 lg:h-full rounded-xl overflow-hidden">

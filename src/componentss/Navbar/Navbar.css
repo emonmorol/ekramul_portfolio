@@ -13,8 +13,6 @@
 }
 
 .avatar {
-  display: flex;
-  align-items: center;
   gap: 10px;
   font-weight: 600;
   color: #d9e1eb;
