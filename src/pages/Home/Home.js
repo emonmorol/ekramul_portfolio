@@ -7,7 +7,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <div className="top-content flex flex-col-reverse lg:flex-row justify-between items-center">
+      <div className="max-w-7xl mx-auto mt-16 flex flex-col-reverse lg:flex-row justify-between items-center">
         <div className="w-full lg:w-2/3">
           <div>
             <p
@@ -19,8 +19,6 @@ const Home = () => {
             </p>
             <p
               data-aos="fade-down-right"
-              yarn
-              start
               data-aos-duration="1000"
               className="uppercase font-semibold my-7 text-left text-3xl lg:text-6xl text-white leading-snug"
             >

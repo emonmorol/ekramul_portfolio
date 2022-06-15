@@ -6,10 +6,13 @@ import blood from "../../assets/images/blood-buddies-donation.png";
 import { useEffect } from "react";
 import { useState } from "react";
 import "./PorjectDetails.css";
+import ScreenShotModal from "./ScreenShotModal";
 
 const ProjectDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState({});
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [openedImage, setOpenedImage] = useState("");
 
   const projects = [
     {
@@ -40,6 +43,12 @@ const ProjectDetails = () => {
         "MongoDB",
         "Stripe",
       ],
+      screenshots: [
+        "https://i.ibb.co/wZqqnBQ/Screenshot-2022-06-12-140455.png",
+        "https://i.ibb.co/tZtnCHr/Screenshot-2022-06-12-140412.png",
+        "https://i.ibb.co/ZNCpcs6/Screenshot-2022-06-12-140548.png",
+        "https://i.ibb.co/7bdhspv/Screenshot-2022-06-12-140346.png",
+      ],
     },
     {
       id: 2,
@@ -67,6 +76,12 @@ const ProjectDetails = () => {
         "DaisyU",
         "ExpresJs",
         "MongoDB",
+      ],
+      screenshots: [
+        "https://i.ibb.co/GpGfMYs/Screenshot-2022-06-12-150637.png",
+        "https://i.ibb.co/n6b7jzY/Screenshot-2022-06-12-150535.png",
+        "https://i.ibb.co/Sfx30cp/Screenshot-2022-06-12-150511.png",
+        "https://i.ibb.co/2KFPXKR/Screenshot-2022-06-12-150738.png",
       ],
     },
     {
@@ -97,19 +112,26 @@ const ProjectDetails = () => {
         "MongoDB",
         "Stripe",
       ],
+      screenshots: [
+        "https://i.ibb.co/VCC2LPR/Screenshot-2022-06-12-151116.png",
+        "https://i.ibb.co/fMcj7Wz/Screenshot-2022-06-12-151053.png",
+        "https://i.ibb.co/Jzp4W7H/Screenshot-2022-06-12-151511.png",
+        "https://i.ibb.co/pP17B8H/Screenshot-2022-06-12-151445.png",
+      ],
     },
   ];
 
   useEffect(() => {
     const project = projects.find((x) => x.id === +id);
     setProject(project);
+    console.log(project);
   }, [id]);
 
   return (
     <div
       data-aos="zoom-in-right"
       data-aos-duration="1500"
-      className="detail-card lg:min-h-screen p-5 lg:p-40 hover:text-white"
+      className="detail-card flex flex-col lg:min-h-screen p-5 lg:p-40 hover:text-white"
     >
       <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8 lg:h-[60vh] text-left mb-32">
         <div className="image-detail w-full h-80 lg:w-1/2 lg:h-full rounded-xl overflow-hidden">
@@ -174,6 +196,31 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        <p className="text-accent text-center font-bold text-xl lg:text-5xl mb-10">
+          Project Screenshots
+        </p>
+        <div className="screenshot w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {project?.screenshots?.map((screenshot) => (
+            <button
+              onClick={() => {
+                setOpenedImage(screenshot);
+                setIsOpen(true);
+              }}
+            >
+              <img className="w-full rounded-3xl" src={screenshot} alt="" />
+            </button>
+          ))}
+        </div>
+      </div>
+      {modalIsOpen && (
+        <ScreenShotModal
+          modalIsOpen={modalIsOpen}
+          setIsOpen={setIsOpen}
+          openedImage={openedImage}
+        />
+      )}
     </div>
   );
 };

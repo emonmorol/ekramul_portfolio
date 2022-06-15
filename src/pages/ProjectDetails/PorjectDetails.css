@@ -89,3 +89,30 @@
   box-shadow: 2px 2px 2px #101113, -2px -2px 2px #32373d;
   /* color: #0097e6; */
 }
+
+.screenshot img {
+  background-color: black;
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+.screenshot img:hover {
+  opacity: 0.3;
+}
+
+.Modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: #212428;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212428;
+}

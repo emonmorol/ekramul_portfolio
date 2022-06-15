@@ -6,7 +6,7 @@ const Education = () => {
     {
       id: 1,
       degree: "BSc. in Computer Science And Engineering",
-      institute: "Hajee Mogammad Danesh Science And Technology University",
+      institute: "Hajee Mohammad Danesh Science And Technology University",
       year: "2022 (First Semester) - 2026 (Possibly)",
     },
     {
