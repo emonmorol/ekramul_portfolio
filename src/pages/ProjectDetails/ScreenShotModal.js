@@ -27,27 +27,14 @@ const ScreenShotModal = ({ setIsOpen, openedImage, modalIsOpen }) => {
       style={customStyles}
       contentLabel="Example Modal"
     >
-      <div className="p-20 pt-36 relative">
+      <div className="lg:p-20 lg:pt-36 w-full relative">
         <button
           onClick={closeModal}
-          class="btn btn-circle absolute right-28 top-44"
+          class="absolute right-2 top-2 lg:right-28 lg:top-44 font-mono bg-primary px-2 text-white rounded-full"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-2 h-2 lg:h-6 lg:w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          x
         </button>
-        <img src={openedImage} alt="" />
+        <img className="w-full" src={openedImage} alt="" />
       </div>
     </Modal>
   );
