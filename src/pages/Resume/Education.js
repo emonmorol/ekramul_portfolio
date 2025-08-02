@@ -5,16 +5,17 @@ const Education = () => {
   const educations = [
     {
       id: 1,
-      degree: "BSc. in Computer Science And Engineering",
-      institute: "Hajee Mohammad Danesh Science And Technology University",
-      year: "2022 (First Semester) - 2026 (Possibly)",
+      degree: "Science",
+      institute: "Notre Dame College",
+      year: "2018 - 2020",
     },
     {
       id: 2,
-      degree: "Science",
-      institute: "Notre Dame Collage",
-      year: "2018 - 2020",
+      degree: "BSc. in Computer Science And Engineering",
+      institute: "United International University",
+      year: "2022 - 2026 (Possibly)",
     },
+    
   ];
   return (
     <div>
