@@ -7,6 +7,6 @@ Passionate about web development, competitive programming, and learning AI/ML.
 - 🚀 Currently building a full-stack IELTS mock test platform with AI integration
 - 🌐 Live Portfolio: [ihmorol.vercel.app](https://ihmorol.vercel.app)
 - 🧠 Exploring NLP, LLMs, and deep learning
-- 📫 Reach me at: ekramul.dev@gmail.com
+- 📫 Reach me at: ekramulhasanmorol@gmail.com
 
 > More updates coming soon...
