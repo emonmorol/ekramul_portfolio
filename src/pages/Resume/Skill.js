@@ -28,17 +28,6 @@ const Skill = () => {
 			color: "text-blue-500",
 		},
 		{
-			id: 5,
-			name: "ES6",
-			icon: (
-				<span className="text-[8px] pt-2 pl-2 pb-0.5 pr-0.5 rounded bg-yellow-500">
-					<i className="fa-solid fa-e"></i>
-					<i className="fa-solid fa-s"></i>
-				</span>
-			),
-			color: "text-black",
-		},
-		{
 			id: 6,
 			name: "Tailwind",
 			icon: (
@@ -110,6 +99,12 @@ const Skill = () => {
 			id: 11,
 			name: "MongoDB",
 			icon: <i className="fa-brands fa-envira"></i>,
+			color: "text-green-500",
+		},
+		{
+			id: 12,
+			name: "MySQL",
+			icon: "",
 			color: "text-green-500",
 		},
 	];
@@ -279,17 +274,23 @@ const Skill = () => {
 		},
 
 		{
-			id: 2,
+			id: 12,
 			name: "Java",
 			icon: <i className="fa-brands fa-java" />,
 			color: "text-orange-600",
 		},
 		{
-			id: 3,
-			name: "C",
+			id: 13,
+			name: "C++",
 			icon: <i className="fa-solid fa-c" />,
 			color: "text-blue-600",
 		},
+		{
+			id:14,
+			name: "JWT",
+			icon:"",
+			color: "text-blue-600"
+		}
 	];
 
 	const familiar = [
@@ -353,6 +354,12 @@ const Skill = () => {
 				</svg>
 			),
 			color: "text-purple-500",
+		},
+				{
+			id:7,
+			name: "Python",
+			icon:<i className="fa-brands fa-python"></i>,
+			color :"text-yellow-500"
 		},
 	];
 
